@@ -1,0 +1,2183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>협력병원 모집 | 지역별 단 2곳, 그 자리에 당신을</title>
+<meta name="description" content="K뷰티 K메디컬 콘텐츠로 의료관광까지 케어하는 플랫폼. 지역별, 주력시술별 TO 2곳 한정. 7년 병원 마케팅 노하우와 4대 미디어 네트워크로 지역 시술 성지를 만듭니다.">
+<meta property="og:title" content="협력병원 모집 — 지역별 단 두 자리, 그 자리에 당신을">
+<meta property="og:description" content="K뷰티 K메디컬 콘텐츠로 의료관광까지 케어하는 플랫폼. 지역별, 주력시술별 TO 2곳 한정 큐레이션.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+<style>
+/* ============================================
+   DESIGN TOKENS — LUXURY ROSE GOLD
+   ============================================ */
+:root {
+  --bg-void: #050507;
+  --bg-deepest: #0a0a0f;
+  --bg-base: #0f0e14;
+  --bg-elevated: #16151e;
+  --bg-card: #1c1a25;
+  --bg-card-hover: #24222e;
+
+  --border-subtle: #2a2735;
+  --border-default: #3d3849;
+  --border-bright: #5a5168;
+
+  --text-primary: #f8f4ed;
+  --text-secondary: #c5bda8;
+  --text-tertiary: #8a8275;
+  --text-muted: #5d5849;
+
+  --rose-gold: #d4a574;
+  --rose-gold-bright: #e8c39a;
+  --rose-gold-deep: #b08550;
+  --champagne: #e8d4a0;
+  --pearl: #f8f4ed;
+  --copper: #c08552;
+
+  --gradient-rose: linear-gradient(135deg, #d4a574 0%, #b08550 100%);
+  --gradient-champagne: linear-gradient(135deg, #e8d4a0 0%, #d4a574 50%, #b08550 100%);
+  --gradient-pearl: linear-gradient(180deg, rgba(248, 244, 237, 0.05) 0%, transparent 100%);
+  --gradient-deep: linear-gradient(180deg, #0a0a0f 0%, #16151e 100%);
+
+  --font-display: 'Fraunces', 'Pretendard Variable', serif;
+  --font-body: 'Pretendard Variable', 'Pretendard', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 36px;
+
+  --shadow-luxe: 0 30px 80px rgba(212, 165, 116, 0.15);
+  --shadow-glow-gold: 0 0 60px rgba(212, 165, 116, 0.3);
+
+  --max-width: 1240px;
+  --section-padding: 140px;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg-base);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================================
+   BACKGROUND ATMOSPHERE
+   ============================================ */
+.bg-orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(140px);
+  opacity: 0.18;
+  pointer-events: none;
+  z-index: 0;
+}
+.bg-orb-1 { top: 5%; left: -15%; width: 700px; height: 700px; background: var(--rose-gold); }
+.bg-orb-2 { top: 50%; right: -15%; width: 600px; height: 600px; background: var(--copper); opacity: 0.12; }
+.bg-orb-3 { top: 120%; left: 20%; width: 500px; height: 500px; background: var(--champagne); opacity: 0.08; }
+
+.bg-texture {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.03;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(212, 165, 116, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(232, 212, 160, 0.2) 0%, transparent 50%);
+}
+
+.noise {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23noiseFilter)'/></svg>");
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 24px 48px;
+  background: rgba(10, 10, 15, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: var(--rose-gold);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.nav-logo span {
+  color: var(--text-primary);
+  letter-spacing: 2px;
+  font-style: normal;
+  font-weight: 700;
+}
+.nav-logo em {
+  font-style: italic;
+  font-weight: 500;
+  color: var(--rose-gold);
+}
+.nav-cta {
+  background: transparent;
+  color: var(--rose-gold);
+  padding: 11px 24px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  border: 1px solid var(--rose-gold);
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: var(--font-mono);
+}
+.nav-cta:hover {
+  background: var(--rose-gold);
+  color: var(--bg-deepest);
+}
+
+/* ============================================
+   CONTAINER
+   ============================================ */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 48px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ============================================
+   HERO
+   ============================================ */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 160px 0 100px;
+  position: relative;
+}
+
+.hero-frame {
+  position: absolute;
+  top: 140px;
+  left: 48px;
+  right: 48px;
+  bottom: 100px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(212, 165, 116, 0.02) 0%, transparent 30%);
+}
+
+.hero-content { position: relative; z-index: 2; padding: 64px 48px; }
+
+.hero-tag-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--rose-gold);
+  font-weight: 600;
+  padding: 8px 16px;
+  border: 1px solid var(--rose-gold);
+  border-radius: 999px;
+  background: rgba(212, 165, 116, 0.05);
+  text-transform: uppercase;
+}
+.hero-tag-dot {
+  width: 6px; height: 6px;
+  background: var(--rose-gold);
+  border-radius: 50%;
+  animation: glow 2s ease-in-out infinite;
+}
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 0 0 var(--rose-gold); opacity: 1; }
+  50% { box-shadow: 0 0 0 6px rgba(212, 165, 116, 0); opacity: 0.5; }
+}
+.hero-tag-divider {
+  width: 32px;
+  height: 1px;
+  background: var(--border-default);
+}
+.hero-tag-meta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-tertiary);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 56px;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 6vw, 88px);
+  font-weight: 300;
+  line-height: 1.08;
+  letter-spacing: -2px;
+  margin-bottom: 0;
+  color: var(--text-primary);
+}
+.hero-title em {
+  font-style: italic;
+  font-weight: 700;
+  color: var(--rose-gold);
+}
+.hero-title em.title-glow {
+  font-style: italic;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--champagne) 0%, var(--rose-gold-bright) 30%, var(--rose-gold) 60%, var(--rose-gold-deep) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  display: inline-block;
+  padding: 0 0.15em 0.05em 0.1em;
+  margin-right: 0.05em;
+  text-shadow:
+    0 0 40px rgba(232, 195, 154, 0.6),
+    0 0 80px rgba(212, 165, 116, 0.4);
+  filter: drop-shadow(0 4px 20px rgba(212, 165, 116, 0.5));
+}
+.hero-title strong {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.hero-signature-line {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+.sig-dot {
+  width: 4px;
+  height: 4px;
+  background: var(--rose-gold);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--rose-gold);
+  flex-shrink: 0;
+}
+.sig-text {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: var(--rose-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-size: clamp(15px, 1.8vw, 19px);
+  color: var(--text-secondary);
+  font-weight: 400;
+  margin-bottom: 0;
+  max-width: 720px;
+  line-height: 1.7;
+}
+
+.hero-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding-top: 48px;
+  border-top: 1px solid var(--border-subtle);
+}
+.hero-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.hero-meta-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+}
+.hero-meta-value {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--rose-gold);
+  font-style: italic;
+  letter-spacing: -0.5px;
+  line-height: 1.4;
+}
+
+/* ============================================
+   SECTION COMMON
+   ============================================ */
+section { padding: var(--section-padding) 0; position: relative; }
+
+.section-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 5px;
+  color: var(--rose-gold);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.section-eyebrow::before {
+  content: '';
+  width: 32px;
+  height: 1px;
+  background: var(--rose-gold);
+}
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin-bottom: 32px;
+}
+.section-title em {
+  color: var(--rose-gold);
+  font-style: italic;
+  font-weight: 600;
+}
+.section-title strong {
+  font-weight: 700;
+}
+.section-subtitle {
+  font-size: 18px;
+  color: var(--text-secondary);
+  max-width: 720px;
+  line-height: 1.7;
+}
+
+/* ============================================
+   VISION SECTION — K-BEAUTY GLOBAL
+   ============================================ */
+.vision-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.vision-text-block { display: flex; flex-direction: column; gap: 32px; }
+.vision-stage {
+  padding: 28px 32px;
+  background: linear-gradient(135deg, var(--bg-card) 0%, transparent 100%);
+  border-left: 2px solid var(--rose-gold);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+.vision-stage-num {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--rose-gold);
+  margin-bottom: 12px;
+}
+.vision-stage-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  font-style: italic;
+}
+.vision-stage-desc {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.vision-visual {
+  position: relative;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vision-globe {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1;
+}
+.vision-orbit {
+  position: absolute;
+  inset: 0;
+  border: 1px solid var(--border-subtle);
+  border-radius: 50%;
+  animation: orbit 40s linear infinite;
+}
+.vision-orbit-2 {
+  inset: 40px;
+  animation: orbit 30s linear infinite reverse;
+  border-color: rgba(212, 165, 116, 0.2);
+}
+.vision-orbit-3 {
+  inset: 80px;
+  animation: orbit 50s linear infinite;
+  border-color: rgba(212, 165, 116, 0.4);
+}
+@keyframes orbit { to { transform: rotate(360deg); } }
+
+.vision-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 165, 116, 0.4) 0%, transparent 70%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vision-center-text {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--rose-gold);
+  text-align: center;
+  letter-spacing: 1px;
+}
+.vision-center-text small {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: var(--text-tertiary);
+  margin-top: 6px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.vision-node {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: var(--bg-card);
+  border: 1px solid var(--rose-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--rose-gold);
+  letter-spacing: 1px;
+}
+.vision-node-1 { top: 5%; left: 50%; transform: translateX(-50%); }
+.vision-node-2 { top: 25%; right: 5%; }
+.vision-node-3 { bottom: 25%; right: 5%; }
+.vision-node-4 { bottom: 5%; left: 50%; transform: translateX(-50%); }
+.vision-node-5 { bottom: 25%; left: 5%; }
+.vision-node-6 { top: 25%; left: 5%; }
+
+/* ============================================
+   COOPERATION SECTION
+   ============================================ */
+.coop-wrapper {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.coop-card {
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 48px 36px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.coop-card:hover {
+  border-color: var(--rose-gold);
+  transform: translateY(-8px);
+}
+.coop-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--gradient-rose);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.coop-card:hover::before { opacity: 1; }
+
+.coop-num {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 88px;
+  color: var(--rose-gold);
+  line-height: 1;
+  letter-spacing: -3px;
+  margin-bottom: 32px;
+  opacity: 0.5;
+}
+.coop-title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+.coop-desc {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ============================================
+   INFRA SECTION — 4 CHANNELS
+   ============================================ */
+.infra {
+  background: var(--bg-deepest);
+}
+.infra-intro {
+  display: block;
+  margin-bottom: 80px;
+  max-width: 800px;
+}
+.infra-tagline {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--rose-gold-bright);
+  line-height: 1.6;
+  padding-left: 24px;
+  border-left: 2px solid var(--rose-gold);
+}
+
+.infra-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.infra-card {
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.infra-card:hover {
+  border-color: var(--rose-gold);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-luxe);
+}
+
+.infra-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+.infra-num {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--rose-gold);
+}
+.infra-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  padding: 4px 10px;
+  border: 1px solid var(--rose-gold);
+  border-radius: 4px;
+  color: var(--rose-gold);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.infra-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+.infra-subtitle {
+  font-size: 15px;
+  color: var(--rose-gold);
+  margin-bottom: 24px;
+  font-family: var(--font-mono);
+  letter-spacing: 1px;
+}
+.infra-divider {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 24px 0;
+}
+.infra-list {
+  list-style: none;
+  margin-bottom: 24px;
+}
+.infra-list li {
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding: 8px 0 8px 24px;
+  position: relative;
+  line-height: 1.6;
+}
+.infra-list li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: var(--rose-gold);
+  font-size: 10px;
+}
+
+.infra-benefit {
+  background: rgba(212, 165, 116, 0.06);
+  border-left: 2px solid var(--rose-gold);
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+}
+.infra-benefit-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--rose-gold);
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.infra-benefit-text {
+  font-size: 14px;
+  color: var(--text-primary);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* ============================================
+   AEO / GEO SECTION
+   ============================================ */
+.aeo-geo {
+  background: linear-gradient(180deg, var(--bg-deepest) 0%, var(--bg-base) 100%);
+  position: relative;
+  overflow: hidden;
+}
+.aeo-geo-wrapper {
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.08) 0%, transparent 60%);
+  border: 1px solid var(--rose-gold);
+  border-radius: var(--radius-xl);
+  padding: 80px 64px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 64px;
+}
+
+.aeo-geo-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--rose-gold-bright);
+  padding: 6px 14px;
+  border: 1px solid var(--rose-gold);
+  border-radius: 4px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.aeo-geo-title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 400;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+  line-height: 1.2;
+}
+.aeo-geo-title em {
+  color: var(--rose-gold);
+  font-style: italic;
+  font-weight: 600;
+}
+.aeo-geo-subtitle {
+  font-size: 17px;
+  color: var(--text-secondary);
+  margin-bottom: 48px;
+  line-height: 1.7;
+  max-width: 800px;
+}
+
+.aeo-geo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.aeo-geo-card {
+  background: var(--bg-deepest);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 36px;
+  transition: all 0.4s ease;
+}
+.aeo-geo-card:hover {
+  border-color: var(--rose-gold);
+  transform: translateY(-4px);
+}
+.aeo-geo-card-num {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--rose-gold);
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+.aeo-geo-card-title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+.aeo-geo-card-full {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  margin-bottom: 20px;
+  font-family: var(--font-mono);
+  letter-spacing: 1px;
+}
+.aeo-geo-card-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.aeo-geo-example {
+  background: rgba(212, 165, 116, 0.05);
+  border-radius: 8px;
+  padding: 16px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--rose-gold-bright);
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+}
+.aeo-geo-example-label {
+  display: block;
+  font-size: 10px;
+  color: var(--text-tertiary);
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.aeo-geo-note {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border-subtle);
+  text-align: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 17px;
+  color: var(--rose-gold-bright);
+}
+
+/* ============================================
+   PRODUCTS SECTION
+   ============================================ */
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-top: 80px;
+}
+.product-card {
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  position: relative;
+  overflow: hidden;
+}
+.product-card.featured {
+  border-color: var(--rose-gold);
+  background: linear-gradient(180deg, rgba(212, 165, 116, 0.08) 0%, var(--bg-elevated) 100%);
+}
+.product-card.featured::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--gradient-rose);
+}
+.product-label {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--rose-gold);
+  padding: 4px 10px;
+  border: 1px solid var(--rose-gold);
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.product-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 12px;
+  letter-spacing: -0.5px;
+}
+.product-tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-tertiary);
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.product-divider {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 24px 0;
+}
+.product-list {
+  list-style: none;
+}
+.product-list li {
+  font-size: 15px;
+  color: var(--text-secondary);
+  padding: 10px 0 10px 28px;
+  position: relative;
+  line-height: 1.6;
+}
+.product-list li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  color: var(--rose-gold);
+  font-size: 11px;
+}
+.product-list li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ============================================
+   QUALIFICATION SECTION
+   ============================================ */
+.qual {
+  background: var(--bg-deepest);
+}
+.qual-wrapper {
+  margin-top: 80px;
+}
+.qual-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(24px, 3.5vw, 40px);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--text-primary);
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 64px;
+  letter-spacing: -0.5px;
+}
+.qual-quote em {
+  color: var(--rose-gold);
+  font-weight: 600;
+}
+.qual-quote::before, .qual-quote::after {
+  content: '"';
+  color: var(--rose-gold);
+  font-size: 1.4em;
+  opacity: 0.4;
+}
+
+.qual-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.qual-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+}
+.qual-item:hover {
+  border-color: var(--rose-gold);
+  background: var(--bg-card-hover);
+}
+.qual-check {
+  width: 28px; height: 28px;
+  background: rgba(212, 165, 116, 0.15);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--rose-gold);
+  font-weight: 700;
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+.qual-text {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* ============================================
+   PROCESS SECTION
+   ============================================ */
+.process-track {
+  margin-top: 80px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.process-track::before {
+  content: '';
+  position: absolute;
+  top: 36px;
+  left: 12%;
+  right: 12%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border-default), var(--rose-gold), var(--border-default));
+  opacity: 0.5;
+}
+.process-step {
+  position: relative;
+  text-align: center;
+  padding: 0 12px;
+}
+.process-num {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 24px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--rose-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--rose-gold);
+  position: relative;
+  z-index: 2;
+}
+.process-step:last-child .process-num {
+  background: var(--rose-gold);
+  color: var(--bg-deepest);
+  box-shadow: var(--shadow-glow-gold);
+}
+.process-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--text-tertiary);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.process-title {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  font-style: italic;
+}
+.process-desc {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  line-height: 1.6;
+}
+
+/* ============================================
+   PRICE SECTION
+   ============================================ */
+.price {
+  background: var(--bg-deepest);
+  position: relative;
+}
+.price-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 80px;
+}
+.price-card {
+  background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  padding: 56px 48px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.price-card.founding {
+  border-color: var(--rose-gold);
+  background:
+    radial-gradient(circle at 20% 0%, rgba(212, 165, 116, 0.15) 0%, transparent 50%),
+    linear-gradient(180deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
+}
+.price-card.founding::before {
+  content: 'EARLY ACCESS';
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--rose-gold);
+  background: rgba(212, 165, 116, 0.12);
+  border: 1px solid var(--rose-gold);
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+.price-tier-name {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: var(--rose-gold);
+  margin-bottom: 20px;
+}
+.price-card.founding .price-tier-name { color: var(--rose-gold-bright); }
+.price-tier-kr {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+}
+.price-amount {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--rose-gold);
+  line-height: 1;
+  margin-bottom: 8px;
+  letter-spacing: -2px;
+}
+.price-amount span {
+  font-size: 24px;
+  color: var(--text-secondary);
+  margin-left: 8px;
+  font-weight: 400;
+  font-style: italic;
+}
+.price-meta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-tertiary);
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+.price-divider {
+  height: 1px;
+  background: var(--border-subtle);
+  margin: 32px 0;
+}
+.price-features {
+  list-style: none;
+}
+.price-features li {
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding: 8px 0 8px 24px;
+  position: relative;
+  line-height: 1.6;
+}
+.price-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: var(--rose-gold);
+  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+/* CONTENT PACKAGE */
+.content-package {
+  margin-top: 32px;
+  background: linear-gradient(135deg, rgba(212, 165, 116, 0.06) 0%, transparent 100%);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+}
+.content-package-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.content-package-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--rose-gold);
+}
+.content-package-title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 600;
+  font-style: italic;
+  margin-top: 8px;
+}
+.content-package-price {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--rose-gold);
+}
+.content-package-price span {
+  font-size: 18px;
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-style: italic;
+}
+.content-package-features {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.content-package-features li {
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding: 24px 20px;
+  background: var(--bg-deepest);
+  border-radius: var(--radius-md);
+  border-top: 2px solid var(--rose-gold);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cp-feature-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--rose-gold);
+  text-transform: uppercase;
+}
+.cp-feature-text {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+.cp-feature-text strong {
+  display: block;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+/* OPTIONS */
+.options-section {
+  margin-top: 56px;
+  padding-top: 56px;
+  border-top: 1px solid var(--border-subtle);
+}
+.options-header {
+  margin-bottom: 32px;
+}
+.options-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--rose-gold);
+  margin-bottom: 8px;
+}
+.options-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: -0.5px;
+}
+.options-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.option-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.option-item:hover {
+  border-color: var(--rose-gold);
+  background: var(--bg-card-hover);
+}
+.option-info { flex: 1; min-width: 200px; }
+.option-name {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+  font-style: italic;
+}
+.option-desc {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  line-height: 1.5;
+}
+.option-price {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--rose-gold);
+  white-space: nowrap;
+}
+.option-price.consult {
+  font-size: 16px;
+  font-style: italic;
+  color: var(--rose-gold-bright);
+}
+.option-price span {
+  font-size: 14px;
+  color: var(--text-tertiary);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.option-sublist {
+  width: 100%;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.option-tag {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  padding: 4px 10px;
+  background: rgba(212, 165, 116, 0.08);
+  border: 1px solid var(--border-default);
+  border-radius: 4px;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+}
+
+/* ============================================
+   FAQ SECTION
+   ============================================ */
+.faq-list {
+  margin-top: 64px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.faq-item {
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  margin-bottom: 12px;
+  overflow: hidden;
+  background: var(--bg-card);
+  transition: all 0.3s ease;
+}
+.faq-item:hover { border-color: var(--rose-gold); }
+.faq-item.open {
+  border-color: var(--rose-gold);
+  background: var(--bg-card-hover);
+}
+.faq-question {
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--text-primary);
+  user-select: none;
+  font-family: var(--font-body);
+}
+.faq-icon {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--rose-gold);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--rose-gold);
+  font-size: 16px;
+  font-weight: 300;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  margin-left: 16px;
+  font-family: var(--font-mono);
+}
+.faq-item.open .faq-icon {
+  transform: rotate(45deg);
+  background: var(--rose-gold);
+  color: var(--bg-deepest);
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.faq-item.open .faq-answer { max-height: 500px; }
+.faq-answer-inner {
+  padding: 0 32px 28px;
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+/* ============================================
+   CTA SECTION
+   ============================================ */
+.cta {
+  text-align: center;
+  padding: 160px 0;
+  position: relative;
+  overflow: hidden;
+}
+.cta-wrapper {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(212, 165, 116, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(176, 133, 80, 0.15) 0%, transparent 50%),
+    linear-gradient(180deg, var(--bg-card) 0%, var(--bg-elevated) 100%);
+  border: 1px solid var(--rose-gold);
+  border-radius: var(--radius-xl);
+  padding: 100px 64px;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.cta-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(135deg, var(--rose-gold), var(--champagne), var(--rose-gold));
+  border-radius: var(--radius-xl);
+  z-index: -1;
+  opacity: 0.3;
+}
+.cta-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 5px;
+  color: var(--rose-gold);
+  padding: 8px 18px;
+  border: 1px solid var(--rose-gold);
+  border-radius: 999px;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+.cta-title {
+  font-family: var(--font-display);
+  font-size: clamp(32px, 4vw, 56px);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  margin-bottom: 24px;
+}
+.cta-title em {
+  color: var(--rose-gold);
+  font-style: italic;
+  font-weight: 600;
+}
+.cta-subtitle {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin-bottom: 56px;
+  line-height: 1.7;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--rose-gold);
+  color: var(--bg-deepest);
+  padding: 20px 40px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  border: 1px solid var(--rose-gold);
+  font-family: var(--font-body);
+  letter-spacing: 0.5px;
+}
+.cta-button:hover {
+  background: transparent;
+  color: var(--rose-gold);
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(212, 165, 116, 0.3);
+}
+.cta-button-arrow {
+  font-family: var(--font-mono);
+  font-size: 18px;
+}
+
+.cta-meta {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 48px;
+  flex-wrap: wrap;
+}
+.cta-meta-item { text-align: center; }
+.cta-meta-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--text-tertiary);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+.cta-meta-value {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--rose-gold-bright);
+}
+
+.cta-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--text-tertiary);
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid var(--border-subtle);
+  line-height: 1.7;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+  padding: 64px 0 40px;
+  border-top: 1px solid var(--border-subtle);
+  text-align: center;
+}
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 4px;
+  margin-bottom: 16px;
+  color: var(--rose-gold);
+}
+.footer-tagline {
+  font-size: 14px;
+  color: var(--text-tertiary);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+.footer-meta {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--text-muted);
+}
+
+/* ============================================
+   SCROLL ANIMATIONS
+   ============================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 968px) {
+  .nav { padding: 18px 24px; }
+  .container { padding: 0 24px; }
+  :root { --section-padding: 90px; }
+
+  .hero-frame { left: 16px; right: 16px; top: 120px; bottom: 60px; }
+  .hero-content { padding: 40px 24px; }
+  .hero-meta-grid { grid-template-columns: 1fr; gap: 20px; }
+
+  .vision-grid { grid-template-columns: 1fr; gap: 48px; }
+  .vision-visual { height: 360px; }
+  .coop-wrapper { grid-template-columns: 1fr; }
+  .infra-intro { grid-template-columns: 1fr; gap: 32px; }
+  .infra-grid { grid-template-columns: 1fr; }
+  .infra-card { padding: 32px 28px; }
+  .aeo-geo-wrapper { padding: 48px 28px; }
+  .aeo-geo-grid { grid-template-columns: 1fr; }
+  .products-grid { grid-template-columns: 1fr; }
+  .product-card { padding: 36px 28px; }
+  .qual-list { grid-template-columns: 1fr; }
+  .process-track {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .process-track::before { display: none; }
+  .price-grid { grid-template-columns: 1fr; }
+  .price-card { padding: 40px 28px; }
+  .price-amount { font-size: 48px; }
+  .content-package { padding: 28px; }
+  .content-package-features { grid-template-columns: 1fr; }
+  .content-package-price { font-size: 28px; }
+  .cta-wrapper { padding: 64px 24px; }
+  .cta-meta { gap: 24px; }
+}
+</style>
+</head>
+<body>
+
+<div class="bg-orb bg-orb-1"></div>
+<div class="bg-orb bg-orb-2"></div>
+<div class="bg-orb bg-orb-3"></div>
+<div class="bg-texture"></div>
+<div class="noise"></div>
+
+<!-- NAVIGATION -->
+<nav class="nav">
+  <div class="nav-logo">
+    <span>K</span> <em>MEDICAL</em>
+  </div>
+  <a href="https://forms.gle/cxZoZx3YfwwXEeoJ7" target="_blank" rel="noopener" class="nav-cta">신청하기 →</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-frame"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-tag-row">
+        <div class="hero-tag">
+          <div class="hero-tag-dot"></div>
+          PARTNER CLINIC RECRUITMENT
+        </div>
+        <div class="hero-tag-divider"></div>
+        <div class="hero-tag-meta">K-BEAUTY · K-MEDICAL · GLOBAL</div>
+      </div>
+
+      <div class="hero-text-block">
+        <h1 class="hero-title">
+          우리 병원의<br>
+          <em class="title-glow">특화 시술 성지</em>를<br>
+          <strong>먼저</strong> 선점하세요
+        </h1>
+
+        <p class="hero-subtitle">
+          K뷰티 K메디컬 콘텐츠로 의료관광까지 케어하는 플랫폼에서<br>
+          지역별 시술 성지가 될 협력병원을 큐레이션합니다.
+        </p>
+      </div>
+
+      <div class="hero-meta-grid">
+        <div class="hero-meta-item">
+          <div class="hero-meta-label">RECRUITMENT BASIS</div>
+          <div class="hero-meta-value">지역별, 주력시술별 TO 2곳</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="hero-meta-label">EXPANSION ROADMAP</div>
+          <div class="hero-meta-value">국내 → 글로벌</div>
+        </div>
+        <div class="hero-meta-item">
+          <div class="hero-meta-label">CURATION TYPE</div>
+          <div class="hero-meta-value">실력, 평판, 특화 기반</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISION SECTION -->
+<section>
+  <div class="container">
+    <span class="section-eyebrow reveal">THE BIG PICTURE</span>
+    <h2 class="section-title reveal">K메디컬 네트워크를 구축해<br><em>국내를 넘어 글로벌</em>로 갑니다</h2>
+    <p class="section-subtitle reveal">국내 검증된 병원을 모아 글로벌로 나아갑니다.<br>그 시작이 협력병원 네트워크입니다.</p>
+
+    <div class="vision-grid">
+      <div class="vision-text-block">
+        <div class="vision-stage reveal reveal-delay-1">
+          <div class="vision-stage-num">STAGE · 01</div>
+          <div class="vision-stage-title">국내 협력병원 네트워크 구축</div>
+          <div class="vision-stage-desc">지역별 실력 있는 협력병원 큐레이션.<br>지인에게도 추천 가능한 곳만 선별합니다.</div>
+        </div>
+        <div class="vision-stage reveal reveal-delay-2">
+          <div class="vision-stage-num">STAGE · 02</div>
+          <div class="vision-stage-title">콘텐츠·커뮤니티 결합</div>
+          <div class="vision-stage-desc">의학 채널, 뷰티 커뮤니티, 오픈채팅 등을 통해<br>협력병원의 콘텐츠를 자연스럽게 확산합니다.</div>
+        </div>
+        <div class="vision-stage reveal reveal-delay-3">
+          <div class="vision-stage-num">STAGE · 03</div>
+          <div class="vision-stage-title">글로벌 의료관광 확장</div>
+          <div class="vision-stage-desc">단계적으로 국가별 확장을 통해 협력병원은<br>국내 고객뿐 아니라 외국인 고객까지 만나게 됩니다.</div>
+        </div>
+      </div>
+
+      <div class="vision-visual reveal reveal-delay-2">
+        <div class="vision-globe">
+          <div class="vision-orbit"></div>
+          <div class="vision-orbit vision-orbit-2"></div>
+          <div class="vision-orbit vision-orbit-3"></div>
+          <div class="vision-center">
+            <div class="vision-center-text">
+              K · MEDICAL<br>
+              <small>GLOBAL NETWORK</small>
+            </div>
+          </div>
+          <div class="vision-node vision-node-1">KR</div>
+          <div class="vision-node vision-node-2">CN</div>
+          <div class="vision-node vision-node-3">JP</div>
+          <div class="vision-node vision-node-4">VN</div>
+          <div class="vision-node vision-node-5">TH</div>
+          <div class="vision-node vision-node-6">US</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS COOPERATION -->
+<section>
+  <div class="container">
+    <span class="section-eyebrow reveal">WHAT IT MEANS</span>
+    <h2 class="section-title reveal">지역별 시술 성지가<br><em>될 수밖에 없는 이유</em></h2>
+    <p class="section-subtitle reveal">국내 검증된 병원을 모아 글로벌로 갑니다.<br>그 시작이 협력병원 네트워크입니다.</p>
+
+    <div class="coop-wrapper">
+      <div class="coop-card reveal reveal-delay-1">
+        <div class="coop-num">01</div>
+        <div class="coop-title">큐레이션</div>
+        <div class="coop-desc">지역별, 주력시술별 TO는 2곳입니다. 신청한다고 모두 받지 않습니다. 실력, 평판, 소구점 등 복합적으로 검증한 후 입점이 확정됩니다. 입점 자체가 일종의 인증이 됩니다.</div>
+      </div>
+      <div class="coop-card reveal reveal-delay-2">
+        <div class="coop-num">02</div>
+        <div class="coop-title">미디어 네트워크</div>
+        <div class="coop-desc">7년간 쌓아온 미디어 네트워크를 입점 즉시 활용합니다. 매번 광고비를 태우는 구조가 아닌 이미 활성화된 채널이 내 병원을 위해 움직입니다.</div>
+      </div>
+      <div class="coop-card reveal reveal-delay-3">
+        <div class="coop-num">03</div>
+        <div class="coop-title">글로벌 진출 티켓</div>
+        <div class="coop-desc">협력병원 네트워크를 시작으로 국가별 확장도 합니다. 자연스럽게 외국인 고객과 매칭됩니다. 해외 거주 외국인부터 국내 거주 외국인까지 모두 만나게 됩니다.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 INFRA -->
+<section class="infra">
+  <div class="container">
+    <span class="section-eyebrow reveal">YOUR FOUR ASSETS</span>
+    <h2 class="section-title reveal">입점 즉시 가동되는 미디어 네트워크<br><em>네이버, 구글, SNS</em> 그리고 <em>AI</em>까지</h2>
+
+    <div class="infra-intro">
+      <p class="section-subtitle reveal">7년간 쌓아온 인프라.<br>수많은 사람이 매일 유입되고 소통하는 4대 채널이 협력병원을 위해 움직입니다.</p>
+    </div>
+
+    <div class="infra-grid">
+      <div class="infra-card reveal reveal-delay-1">
+        <div class="infra-header">
+          <div class="infra-num">01</div>
+          <div class="infra-tag">PLATFORM</div>
+        </div>
+        <h3 class="infra-title">K뷰티 K메디컬 콘텐츠 플랫폼</h3>
+        <div class="infra-subtitle">— GLOBAL WEB · MVP RUNNING</div>
+        <div class="infra-divider"></div>
+        <ul class="infra-list">
+          <li>웹사이트 입점 (한국어 + 글로벌 버전 동시 노출)</li>
+          <li>구글 SEO 최적화</li>
+          <li>트렌드, 인사이트, 리뷰, 기획전, 핫딜 등</li>
+          <li>외국인에게 자연스럽게 도달하는 채널</li>
+        </ul>
+        <div class="infra-benefit">
+          <div class="infra-benefit-label">BENEFIT</div>
+          <div class="infra-benefit-text">국내 고객 + 글로벌 의료관광 고객 모두에게 한 번에 노출</div>
+        </div>
+      </div>
+
+      <div class="infra-card reveal reveal-delay-2">
+        <div class="infra-header">
+          <div class="infra-num">02</div>
+          <div class="infra-tag">COMMUNITY</div>
+        </div>
+        <h3 class="infra-title">뷰티 카페 커뮤니티</h3>
+        <div class="infra-subtitle">— ACTIVE NAVER CAFE</div>
+        <div class="infra-divider"></div>
+        <ul class="infra-list">
+          <li>네이버 카페 입점 (협력병원 전용 노출)</li>
+          <li>네이버 SEO 최적화</li>
+          <li>이벤트, 칼럼 등 카페 공지 + 쪽지 발송</li>
+          <li>고객 후기 및 문의 유입 채널</li>
+        </ul>
+        <div class="infra-benefit">
+          <div class="infra-benefit-label">BENEFIT</div>
+          <div class="infra-benefit-text">시술을 고민하는 잠재 고객이 이미 모여 있는 곳.<br>첫 접점부터 신뢰 기반으로 시작.</div>
+        </div>
+      </div>
+
+      <div class="infra-card reveal reveal-delay-3">
+        <div class="infra-header">
+          <div class="infra-num">03</div>
+          <div class="infra-tag">MEDIA</div>
+        </div>
+        <h3 class="infra-title">의학 채널 SNS</h3>
+        <div class="infra-subtitle">— YOUTUBE · INSTA · TIKTOK · THREADS</div>
+        <div class="infra-divider"></div>
+        <ul class="infra-list">
+          <li>의학 유튜브 채널 콘텐츠 출연</li>
+          <li>인스타그램·틱톡·스레드 동시 노출</li>
+          <li>숏폼·미드폼 기획성 콘텐츠 제작</li>
+          <li>전문성 기반 고객 신뢰도 빌딩</li>
+        </ul>
+        <div class="infra-benefit">
+          <div class="infra-benefit-label">BENEFIT</div>
+          <div class="infra-benefit-text">영상으로 의료진 전문성을 보여주는 가장 효과적인 채널.<br>SNS 전채널을 활용하여 콘텐츠 노출을 극대화하며,<br>정보성부터 후기성 콘텐츠까지 제작 가능.</div>
+        </div>
+      </div>
+
+      <div class="infra-card reveal reveal-delay-4">
+        <div class="infra-header">
+          <div class="infra-num">04</div>
+          <div class="infra-tag">CHAT</div>
+        </div>
+        <h3 class="infra-title">뷰티 오픈채팅</h3>
+        <div class="infra-subtitle">— KAKAOTALK OPEN CHAT</div>
+        <div class="infra-divider"></div>
+        <ul class="infra-list">
+          <li>실시간 뷰티 정보 소통하는 오픈채팅방 운영 및 MOU</li>
+          <li>협력병원 정보 자연스러운 확산</li>
+          <li>의사 결정 직전 단계의 고객에 관여</li>
+          <li>입소문 마케팅의 디지털 버전</li>
+        </ul>
+        <div class="infra-benefit">
+          <div class="infra-benefit-label">BENEFIT</div>
+          <div class="infra-benefit-text">시술 결정을 앞둔 사람들이 모인 공간.<br>가장 구매 전환에 가까운 순간을 잡는 채널.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AEO / GEO -->
+<section class="aeo-geo">
+  <div class="container">
+    <span class="section-eyebrow reveal">FUTURE-PROOF SEARCH</span>
+    <h2 class="section-title reveal">검색의 다음 시대,<br><em>먼저 도착하는</em> 병원이 됩니다</h2>
+
+    <div class="aeo-geo-wrapper reveal">
+      <div class="aeo-geo-eyebrow">AEO · GEO OPTIMIZATION</div>
+      <h3 class="aeo-geo-title">
+        사람들은 더 이상 <em>검색하지 않고 질문</em>합니다.<br>
+        그 질문에 답하는 자가 됩니다.
+      </h3>
+      <p class="aeo-geo-subtitle">
+        2026년의 고객은 네이버, 구글에서 클릭하지 않습니다.<br>
+        ChatGPT에게 묻고, Siri에게 말하고, AI 답변을 받습니다.<br>
+        그 답변에 협력병원의 이름이 들어가도록 하는 세팅입니다.
+      </p>
+
+      <div class="aeo-geo-grid">
+        <div class="aeo-geo-card">
+          <div class="aeo-geo-card-num">01</div>
+          <h4 class="aeo-geo-card-title">AEO</h4>
+          <div class="aeo-geo-card-full">ANSWER ENGINE OPTIMIZATION</div>
+          <p class="aeo-geo-card-desc">
+            음성 검색·AI 답변 엔진 최적화.<br>
+            Siri·Bixby·Google Assistant가 우리 협력병원을<br>
+            답변에 포함하도록 콘텐츠를 쌓아갑니다.
+          </p>
+          <div class="aeo-geo-example">
+            <span class="aeo-geo-example-label">EXAMPLE</span>
+            "강남에서 입술필러 잘하는 곳"<br>
+            음성검색 → AI가 협력병원을 답합니다
+          </div>
+        </div>
+
+        <div class="aeo-geo-card">
+          <div class="aeo-geo-card-num">02</div>
+          <h4 class="aeo-geo-card-title">GEO</h4>
+          <div class="aeo-geo-card-full">GENERATIVE ENGINE OPTIMIZATION</div>
+          <p class="aeo-geo-card-desc">
+            생성형 AI 검색 최적화.<br>
+            ChatGPT·Claude·Perplexity·Gemini가 의료 질문에<br>
+            답할 때 우리 협력병원이 포함되도록 구조화된 데이터를 배포합니다.
+          </p>
+          <div class="aeo-geo-example">
+            <span class="aeo-geo-example-label">EXAMPLE</span>
+            "요즘 많이 받는 피부과 시술과 병원 추천"<br>
+            ChatGPT 질문 → 협력병원이 답변에 등장합니다
+          </div>
+        </div>
+      </div>
+
+      <div class="aeo-geo-note">
+        — 모든 검색이 AI로 옮겨가는 시점, 협력병원은 이미 그곳에 있습니다 —
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUALIFICATION -->
+<section class="qual">
+  <div class="container">
+    <span class="section-eyebrow reveal">WE ARE LOOKING FOR</span>
+    <h2 class="section-title reveal">어떤 병원을 찾고 있는가</h2>
+
+    <div class="qual-wrapper">
+      <div class="qual-quote reveal">
+        지인에게도 <em>망설임 없이 추천할 수 있는 곳</em>
+      </div>
+
+      <div class="qual-list">
+        <div class="qual-item reveal reveal-delay-1">
+          <div class="qual-check">✓</div>
+          <div class="qual-text">의료진의 임상 경력·전문성이 검증된 곳</div>
+        </div>
+        <div class="qual-item reveal reveal-delay-1">
+          <div class="qual-check">✓</div>
+          <div class="qual-text">시그니처 시술이나 차별화된 강점이 있는 곳</div>
+        </div>
+        <div class="qual-item reveal reveal-delay-2">
+          <div class="qual-check">✓</div>
+          <div class="qual-text">고객 케어와 사후 관리 시스템이 갖춰진 곳</div>
+        </div>
+        <div class="qual-item reveal reveal-delay-2">
+          <div class="qual-check">✓</div>
+          <div class="qual-text">지역 내에서 좋은 평판을 유지하고 있는 곳</div>
+        </div>
+        <div class="qual-item reveal reveal-delay-3">
+          <div class="qual-check">✓</div>
+          <div class="qual-text">장기 협력에 진정성 있게 임할 의지가 있는 곳</div>
+        </div>
+        <div class="qual-item reveal reveal-delay-3">
+          <div class="qual-check">✓</div>
+          <div class="qual-text">글로벌 고객 응대 가능성에 열려 있는 곳</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section>
+  <div class="container">
+    <span class="section-eyebrow reveal">PROCESS</span>
+    <h2 class="section-title reveal">입점 절차</h2>
+    <p class="section-subtitle reveal">모든 병원이 입점할 수는 없습니다.<br>협력 방향을 조율 후 최종 협력병원이 됩니다.</p>
+
+    <div class="process-track">
+      <div class="process-step reveal reveal-delay-1">
+        <div class="process-num">01</div>
+        <div class="process-label">STEP 01</div>
+        <h4 class="process-title">신청서 제출</h4>
+        <p class="process-desc">병원 정보, 시그니처 시술,<br>관심 분야 등 작성</p>
+      </div>
+      <div class="process-step reveal reveal-delay-2">
+        <div class="process-num">02</div>
+        <div class="process-label">STEP 02</div>
+        <h4 class="process-title">모니터링</h4>
+        <p class="process-desc">지역·주력시술 등 중복 여부<br>+ 자격 요건 검토</p>
+      </div>
+      <div class="process-step reveal reveal-delay-3">
+        <div class="process-num">03</div>
+        <div class="process-label">STEP 03</div>
+        <h4 class="process-title">미팅 및 실사</h4>
+        <p class="process-desc">대면 또는 비대면 미팅으로<br>협력 방향 조율</p>
+      </div>
+      <div class="process-step reveal reveal-delay-4">
+        <div class="process-num">04</div>
+        <div class="process-label">STEP 04</div>
+        <h4 class="process-title">입점 확정</h4>
+        <p class="process-desc">계약 체결 후<br>미디어 네트워크 등록</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICE -->
+<section class="price">
+  <div class="container">
+    <span class="section-eyebrow reveal">PARTNERSHIP TIERS</span>
+    <h2 class="section-title reveal">가격 안내</h2>
+
+    <!-- Entry Pricing -->
+    <div class="price-grid">
+      <div class="price-card founding reveal reveal-delay-1">
+        <div class="price-tier-name">FOUNDING PARTNER</div>
+        <div class="price-tier-kr">1차 TO 입점</div>
+        <div class="price-amount">50<span>만원</span></div>
+        <div class="price-meta">EARLY ROUND · LIMITED</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li>웹사이트 입점 (글로벌 버전 포함)</li>
+          <li>네이버 카페 입점</li>
+          <li>네이버 SEO + 구글 SEO 최적화</li>
+          <li>이벤트, 칼럼 등 카페 공지 + 쪽지 발송</li>
+          <li>스레드·오픈채팅 확산</li>
+        </ul>
+      </div>
+
+      <div class="price-card reveal reveal-delay-2">
+        <div class="price-tier-name">PARTNER</div>
+        <div class="price-tier-kr">2차 TO 입점</div>
+        <div class="price-amount">100<span>만원</span></div>
+        <div class="price-meta">STANDARD ROUND</div>
+        <div class="price-divider"></div>
+        <ul class="price-features">
+          <li>웹사이트 입점 (글로벌 버전 포함)</li>
+          <li>네이버 카페 입점</li>
+          <li>네이버 SEO + 구글 SEO 최적화</li>
+          <li>이벤트, 칼럼 등 카페 공지 + 쪽지 발송</li>
+          <li>스레드·오픈채팅 확산</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Content Package -->
+    <div class="content-package reveal">
+      <div class="content-package-header">
+        <div>
+          <div class="content-package-label">CONTENT AMPLIFICATION PACKAGE</div>
+          <div class="content-package-title">의학 채널 유튜브 콘텐츠 제작 + 확산</div>
+        </div>
+        <div class="content-package-price">350<span>만원~</span></div>
+      </div>
+      <ul class="content-package-features">
+        <li>
+          <div class="cp-feature-label">CONTENT</div>
+          <div class="cp-feature-text">기획성 콘텐츠 제작<br><strong>미드폼 2편 + 숏폼 8편</strong></div>
+        </li>
+        <li>
+          <div class="cp-feature-label">UPLOAD</div>
+          <div class="cp-feature-text">유튜브 · 인스타그램 · 틱톡<br><strong>미드폼, 숏폼 업로드</strong></div>
+        </li>
+        <li>
+          <div class="cp-feature-label">AMPLIFY</div>
+          <div class="cp-feature-text">카페 · 스레드 · 오픈채팅<br><strong>콘텐츠 확산</strong></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Options -->
+    <div class="options-section">
+      <div class="options-header reveal">
+        <div class="options-label">+ ADDITIONAL OPTIONS</div>
+        <div class="options-title">추가 옵션</div>
+      </div>
+
+      <div class="options-list">
+        <div class="option-item reveal">
+          <div class="option-info">
+            <div class="option-name">소구점 컨설팅</div>
+            <div class="option-desc">병원의 핵심 차별화 포인트를 발굴하고 메시지로 정제합니다</div>
+          </div>
+          <div class="option-price consult">협의</div>
+        </div>
+
+        <div class="option-item reveal">
+          <div class="option-info">
+            <div class="option-name">타 커뮤니티 연결</div>
+            <div class="option-desc">진료과·관심사 기반 추가 커뮤니티 연결</div>
+          </div>
+          <div class="option-price consult">협의</div>
+          <div class="option-sublist">
+            <span class="option-tag">환우 커뮤니티 (비염·축농증·후비루·이명·난청·두통·중이염·말초신경병증)</span>
+            <span class="option-tag">치과 커뮤니티</span>
+            <span class="option-tag">여성성형·시술 커뮤니티 (가슴성형 포함)</span>
+            <span class="option-tag">탈모·다이어트 커뮤니티</span>
+            <span class="option-tag">승무원 커뮤니티</span>
+            <span class="option-tag">직장인 커뮤니티</span>
+            <span class="option-tag">+ 질환 추가 가능</span>
+          </div>
+        </div>
+
+        <div class="option-item reveal">
+          <div class="option-info">
+            <div class="option-name">네이버 검색 상위노출</div>
+            <div class="option-desc">10건 기준 · 키워드 진단 후 진행</div>
+          </div>
+          <div class="option-price">100<span>만원~</span></div>
+        </div>
+
+        <div class="option-item reveal">
+          <div class="option-info">
+            <div class="option-name">스레드 운영</div>
+            <div class="option-desc">30건 기준 · 콘텐츠 기획부터 발행까지</div>
+          </div>
+          <div class="option-price">150<span>만원~</span></div>
+        </div>
+
+        <div class="option-item reveal">
+          <div class="option-info">
+            <div class="option-name">인플루언서 시딩</div>
+            <div class="option-desc">10명 기준 · 인플루언서 매칭</div>
+          </div>
+          <div class="option-price">300<span>만원~</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="cta">
+  <div class="container">
+    <div class="cta-wrapper reveal">
+      <div class="cta-tag">⏰ NOW ACCEPTING</div>
+      <h2 class="cta-title">
+        지역별 시술 성지 만드는<br>
+        <em>협력병원 네트워크</em>에<br>
+        합류하세요
+      </h2>
+
+      <a href="#" class="cta-button" id="applyBtn">
+        협력병원 신청하기
+        <span class="cta-button-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-logo">K · MEDICAL · NETWORK</div>
+    <div class="footer-meta">© 2026 PARTNER CLINIC RECRUITMENT</div>
+  </div>
+</footer>
+
+<script>
+// ============================================
+// SCROLL REVEAL
+// ============================================
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// ============================================
+// APPLY BUTTON (Google Form)
+// ============================================
+document.getElementById('applyBtn').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.open('https://forms.gle/cxZoZx3YfwwXEeoJ7', '_blank');
+});
+
+// ============================================
+// COOPERATION CARD HOVER PARALLAX
+// ============================================
+document.querySelectorAll('.coop-card, .infra-card').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * -2;
+    const rotateY = ((x - centerX) / centerX) * 2;
+    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
+</script>
+
+</body>
+</html>
