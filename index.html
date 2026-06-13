@@ -1614,6 +1614,18 @@ section { padding: var(--section-padding) 0; position: relative; }
   .hero-title { font-size: clamp(32px, 9vw, 42px) !important; line-height: 1.15; letter-spacing: -1px; }
   .hero-subtitle br { display: none; }
   .hero-subtitle { font-size: 14px; line-height: 1.7; }
+
+  /* 모바일에서 본문 영역 br 줄바꿈 무시 (PC 전용 줄바꿈 해제) */
+  .section-title br,
+  .vision-stage-desc br,
+  .section-subtitle br,
+  .infra-benefit-text br,
+  .process-desc br,
+  .cp-feature-text br,
+  .aeo-geo-title br,
+  .aeo-geo-subtitle br,
+  .aeo-geo-card-desc br,
+  .aeo-geo-example br { display: none; }
   .hero-text-block { gap: 24px; margin-bottom: 40px; }
   .hero-meta-grid { grid-template-columns: 1fr; gap: 18px; padding-top: 32px; }
   .hero-meta-value { font-size: 18px; }
@@ -1689,13 +1701,13 @@ section { padding: var(--section-padding) 0; position: relative; }
 
       <div class="hero-text-block">
         <h1 class="hero-title">
-          우리 병원의<br>
-          <em class="title-glow">특화 시술 성지</em>를<br>
+          우리 병원의 <br>
+          <em class="title-glow">특화 시술 성지</em>를 <br>
           <strong>먼저</strong> 선점하세요
         </h1>
 
         <p class="hero-subtitle">
-          K뷰티 K메디컬 콘텐츠로 의료관광까지 케어하는 플랫폼에서<br>
+          K뷰티 K메디컬 콘텐츠로 의료관광까지 케어하는 플랫폼에서 <br>
           지역별 시술 성지가 될 협력병원을 큐레이션합니다.
         </p>
       </div>
@@ -1722,25 +1734,25 @@ section { padding: var(--section-padding) 0; position: relative; }
 <section>
   <div class="container">
     <span class="section-eyebrow reveal">THE BIG PICTURE</span>
-    <h2 class="section-title reveal">K메디컬 네트워크를 구축해<br><em>국내를 넘어 글로벌</em>로 갑니다</h2>
-    <p class="section-subtitle reveal">국내 검증된 병원을 모아 글로벌로 나아갑니다.<br>그 시작이 협력병원 네트워크입니다.</p>
+    <h2 class="section-title reveal">K메디컬 네트워크를 구축해 <br><em>국내를 넘어 글로벌</em>로 갑니다</h2>
+    <p class="section-subtitle reveal">국내 검증된 병원을 모아 글로벌로 나아갑니다. <br>그 시작이 협력병원 네트워크입니다.</p>
 
     <div class="vision-grid">
       <div class="vision-text-block">
         <div class="vision-stage reveal reveal-delay-1">
           <div class="vision-stage-num">STAGE · 01</div>
           <div class="vision-stage-title">국내 협력병원 네트워크 구축</div>
-          <div class="vision-stage-desc">지역별 실력 있는 협력병원 큐레이션.<br>지인에게도 추천 가능한 곳만 선별합니다.</div>
+          <div class="vision-stage-desc">지역별 실력 있는 협력병원 큐레이션. <br>지인에게도 추천 가능한 곳만 선별합니다.</div>
         </div>
         <div class="vision-stage reveal reveal-delay-2">
           <div class="vision-stage-num">STAGE · 02</div>
           <div class="vision-stage-title">콘텐츠·커뮤니티 결합</div>
-          <div class="vision-stage-desc">의학 채널, 뷰티 커뮤니티, 오픈채팅 등을 통해<br>협력병원의 콘텐츠를 자연스럽게 확산합니다.</div>
+          <div class="vision-stage-desc">의학 채널, 뷰티 커뮤니티, 오픈채팅 등을 통해 <br>협력병원의 콘텐츠를 자연스럽게 확산합니다.</div>
         </div>
         <div class="vision-stage reveal reveal-delay-3">
           <div class="vision-stage-num">STAGE · 03</div>
           <div class="vision-stage-title">글로벌 의료관광 확장</div>
-          <div class="vision-stage-desc">단계적으로 국가별 확장을 통해 협력병원은<br>국내 고객뿐 아니라 외국인 고객까지 만나게 됩니다.</div>
+          <div class="vision-stage-desc">단계적으로 국가별 확장을 통해 협력병원은 <br>국내 고객뿐 아니라 외국인 고객까지 만나게 됩니다.</div>
         </div>
       </div>
 
@@ -1751,7 +1763,7 @@ section { padding: var(--section-padding) 0; position: relative; }
           <div class="vision-orbit vision-orbit-3"></div>
           <div class="vision-center">
             <div class="vision-center-text">
-              K · MEDICAL<br>
+              K · MEDICAL <br>
               <small>GLOBAL NETWORK</small>
             </div>
           </div>
@@ -1771,8 +1783,8 @@ section { padding: var(--section-padding) 0; position: relative; }
 <section>
   <div class="container">
     <span class="section-eyebrow reveal">WHAT IT MEANS</span>
-    <h2 class="section-title reveal">지역별 시술 성지가<br><em>될 수밖에 없는 이유</em></h2>
-    <p class="section-subtitle reveal">국내 검증된 병원을 모아 글로벌로 갑니다.<br>그 시작이 협력병원 네트워크입니다.</p>
+    <h2 class="section-title reveal">지역별 시술 성지가 <br><em>될 수밖에 없는 이유</em></h2>
+    <p class="section-subtitle reveal">국내 검증된 병원을 모아 글로벌로 갑니다. <br>그 시작이 협력병원 네트워크입니다.</p>
 
     <div class="coop-wrapper">
       <div class="coop-card reveal reveal-delay-1">
@@ -1798,10 +1810,10 @@ section { padding: var(--section-padding) 0; position: relative; }
 <section class="infra">
   <div class="container">
     <span class="section-eyebrow reveal">YOUR FOUR ASSETS</span>
-    <h2 class="section-title reveal">입점 즉시 가동되는 미디어 네트워크<br><em>네이버, 구글, SNS</em> 그리고 <em>AI</em>까지</h2>
+    <h2 class="section-title reveal">입점 즉시 가동되는 미디어 네트워크! <br><em>네이버, 구글, SNS</em> 그리고 <em>AI</em>까지</h2>
 
     <div class="infra-intro">
-      <p class="section-subtitle reveal">7년간 쌓아온 인프라.<br>수많은 사람이 매일 유입되고 소통하는 4대 채널이 협력병원을 위해 움직입니다.</p>
+      <p class="section-subtitle reveal">7년간 쌓아온 인프라. <br>수많은 사람이 매일 유입되고 소통하는 4대 채널이 협력병원을 위해 움직입니다.</p>
     </div>
 
     <div class="infra-grid">
@@ -1841,7 +1853,7 @@ section { padding: var(--section-padding) 0; position: relative; }
         </ul>
         <div class="infra-benefit">
           <div class="infra-benefit-label">BENEFIT</div>
-          <div class="infra-benefit-text">시술을 고민하는 잠재 고객이 이미 모여 있는 곳.<br>첫 접점부터 신뢰 기반으로 시작.</div>
+          <div class="infra-benefit-text">시술을 고민하는 잠재 고객이 이미 모여 있는 곳. <br>첫 접점부터 신뢰 기반으로 시작.</div>
         </div>
       </div>
 
@@ -1861,7 +1873,7 @@ section { padding: var(--section-padding) 0; position: relative; }
         </ul>
         <div class="infra-benefit">
           <div class="infra-benefit-label">BENEFIT</div>
-          <div class="infra-benefit-text">영상으로 의료진 전문성을 보여주는 가장 효과적인 채널.<br>SNS 전채널을 활용하여 콘텐츠 노출을 극대화하며,<br>정보성부터 후기성 콘텐츠까지 제작 가능.</div>
+          <div class="infra-benefit-text">영상으로 의료진 전문성을 보여주는 가장 효과적인 채널. <br>SNS 전채널을 활용하여 콘텐츠 노출을 극대화하며, <br>정보성부터 후기성 콘텐츠까지 제작 가능.</div>
         </div>
       </div>
 
@@ -1881,7 +1893,7 @@ section { padding: var(--section-padding) 0; position: relative; }
         </ul>
         <div class="infra-benefit">
           <div class="infra-benefit-label">BENEFIT</div>
-          <div class="infra-benefit-text">시술 결정을 앞둔 사람들이 모인 공간.<br>가장 구매 전환에 가까운 순간을 잡는 채널.</div>
+          <div class="infra-benefit-text">시술 결정을 앞둔 사람들이 모인 공간. <br>가장 구매 전환에 가까운 순간을 잡는 채널.</div>
         </div>
       </div>
     </div>
@@ -1892,17 +1904,17 @@ section { padding: var(--section-padding) 0; position: relative; }
 <section class="aeo-geo">
   <div class="container">
     <span class="section-eyebrow reveal">FUTURE-PROOF SEARCH</span>
-    <h2 class="section-title reveal">검색의 다음 시대,<br><em>먼저 도착하는</em> 병원이 됩니다</h2>
+    <h2 class="section-title reveal">검색의 다음 시대, <br><em>먼저 도착하는</em> 병원이 됩니다</h2>
 
     <div class="aeo-geo-wrapper reveal">
       <div class="aeo-geo-eyebrow">AEO · GEO OPTIMIZATION</div>
       <h3 class="aeo-geo-title">
-        사람들은 더 이상 <em>검색하지 않고 질문</em>합니다.<br>
+        사람들은 더 이상 <em>검색하지 않고 질문</em>합니다. <br>
         그 질문에 답하는 자가 됩니다.
       </h3>
       <p class="aeo-geo-subtitle">
-        2026년의 고객은 네이버, 구글에서 클릭하지 않습니다.<br>
-        ChatGPT에게 묻고, Siri에게 말하고, AI 답변을 받습니다.<br>
+        2026년의 고객은 네이버, 구글에서 클릭하지 않습니다. <br>
+        ChatGPT에게 묻고, Siri에게 말하고, AI 답변을 받습니다. <br>
         그 답변에 협력병원의 이름이 들어가도록 하는 세팅입니다.
       </p>
 
@@ -1912,13 +1924,13 @@ section { padding: var(--section-padding) 0; position: relative; }
           <h4 class="aeo-geo-card-title">AEO</h4>
           <div class="aeo-geo-card-full">ANSWER ENGINE OPTIMIZATION</div>
           <p class="aeo-geo-card-desc">
-            음성 검색·AI 답변 엔진 최적화.<br>
-            Siri·Bixby·Google Assistant가 우리 협력병원을<br>
+            음성 검색·AI 답변 엔진 최적화. <br>
+            Siri·Bixby·Google Assistant가 우리 협력병원을 <br>
             답변에 포함하도록 콘텐츠를 쌓아갑니다.
           </p>
           <div class="aeo-geo-example">
             <span class="aeo-geo-example-label">EXAMPLE</span>
-            "강남에서 입술필러 잘하는 곳"<br>
+            "강남에서 입술필러 잘하는 곳" <br>
             음성검색 → AI가 협력병원을 답합니다
           </div>
         </div>
@@ -1928,13 +1940,13 @@ section { padding: var(--section-padding) 0; position: relative; }
           <h4 class="aeo-geo-card-title">GEO</h4>
           <div class="aeo-geo-card-full">GENERATIVE ENGINE OPTIMIZATION</div>
           <p class="aeo-geo-card-desc">
-            생성형 AI 검색 최적화.<br>
-            ChatGPT·Claude·Perplexity·Gemini가 의료 질문에<br>
+            생성형 AI 검색 최적화. <br>
+            ChatGPT·Claude·Perplexity·Gemini가 의료 질문에 <br>
             답할 때 우리 협력병원이 포함되도록 구조화된 데이터를 배포합니다.
           </p>
           <div class="aeo-geo-example">
             <span class="aeo-geo-example-label">EXAMPLE</span>
-            "요즘 많이 받는 피부과 시술과 병원 추천"<br>
+            "요즘 많이 받는 피부과 시술과 병원 추천" <br>
             ChatGPT 질문 → 협력병원이 답변에 등장합니다
           </div>
         </div>
@@ -1993,32 +2005,32 @@ section { padding: var(--section-padding) 0; position: relative; }
   <div class="container">
     <span class="section-eyebrow reveal">PROCESS</span>
     <h2 class="section-title reveal">입점 절차</h2>
-    <p class="section-subtitle reveal">모든 병원이 입점할 수는 없습니다.<br>협력 방향을 조율 후 최종 협력병원이 됩니다.</p>
+    <p class="section-subtitle reveal">모든 병원이 입점할 수는 없습니다. <br>협력 방향을 조율 후 최종 협력병원이 됩니다.</p>
 
     <div class="process-track">
       <div class="process-step reveal reveal-delay-1">
         <div class="process-num">01</div>
         <div class="process-label">STEP 01</div>
         <h4 class="process-title">신청서 제출</h4>
-        <p class="process-desc">병원 정보, 시그니처 시술,<br>관심 분야 등 작성</p>
+        <p class="process-desc">병원 정보, 시그니처 시술, <br>관심 분야 등 작성</p>
       </div>
       <div class="process-step reveal reveal-delay-2">
         <div class="process-num">02</div>
         <div class="process-label">STEP 02</div>
         <h4 class="process-title">모니터링</h4>
-        <p class="process-desc">지역·주력시술 등 중복 여부<br>+ 자격 요건 검토</p>
+        <p class="process-desc">지역·주력시술 등 중복 여부 <br>+ 자격 요건 검토</p>
       </div>
       <div class="process-step reveal reveal-delay-3">
         <div class="process-num">03</div>
         <div class="process-label">STEP 03</div>
         <h4 class="process-title">미팅 및 실사</h4>
-        <p class="process-desc">대면 또는 비대면 미팅으로<br>협력 방향 조율</p>
+        <p class="process-desc">대면 또는 비대면 미팅으로 <br>협력 방향 조율</p>
       </div>
       <div class="process-step reveal reveal-delay-4">
         <div class="process-num">04</div>
         <div class="process-label">STEP 04</div>
         <h4 class="process-title">입점 확정</h4>
-        <p class="process-desc">계약 체결 후<br>미디어 네트워크 등록</p>
+        <p class="process-desc">계약 체결 후 <br>미디어 네트워크 등록</p>
       </div>
     </div>
   </div>
@@ -2075,15 +2087,15 @@ section { padding: var(--section-padding) 0; position: relative; }
       <ul class="content-package-features">
         <li>
           <div class="cp-feature-label">CONTENT</div>
-          <div class="cp-feature-text">기획성 콘텐츠 제작<br><strong>미드폼 2편 + 숏폼 8편</strong></div>
+          <div class="cp-feature-text">기획성 콘텐츠 제작 <br><strong>미드폼 2편 + 숏폼 8편</strong></div>
         </li>
         <li>
           <div class="cp-feature-label">UPLOAD</div>
-          <div class="cp-feature-text">유튜브 · 인스타그램 · 틱톡<br><strong>미드폼, 숏폼 업로드</strong></div>
+          <div class="cp-feature-text">유튜브 · 인스타그램 · 틱톡 <br><strong>미드폼, 숏폼 업로드</strong></div>
         </li>
         <li>
           <div class="cp-feature-label">AMPLIFY</div>
-          <div class="cp-feature-text">카페 · 스레드 · 오픈채팅<br><strong>콘텐츠 확산</strong></div>
+          <div class="cp-feature-text">카페 · 스레드 · 오픈채팅 <br><strong>콘텐츠 확산</strong></div>
         </li>
       </ul>
     </div>
@@ -2099,7 +2111,7 @@ section { padding: var(--section-padding) 0; position: relative; }
         <div class="option-item reveal">
           <div class="option-info">
             <div class="option-name">소구점 컨설팅</div>
-            <div class="option-desc">병원의 핵심 차별화 포인트를 발굴하고 메시지로 정제합니다</div>
+            <div class="option-desc">병원의 핵심 차별화 포인트를 발굴하고 메시지로 정제</div>
           </div>
           <div class="option-price consult">협의</div>
         </div>
@@ -2155,10 +2167,18 @@ section { padding: var(--section-padding) 0; position: relative; }
 
         <div class="option-item reveal">
           <div class="option-info">
-            <div class="option-name">인플루언서 시딩</div>
+            <div class="option-name">인플루언서 시딩 (국내/글로벌)</div>
             <div class="option-desc">10명 기준 · 인플루언서 매칭</div>
           </div>
           <div class="option-price">300<span>만원~</span></div>
+        </div>
+
+        <div class="option-item reveal">
+          <div class="option-info">
+            <div class="option-name">외국인환자유치</div>
+            <div class="option-desc">영미권, 중화권, 일본, 태국, 인도네시아, 몽골, 러시아/CIS 등</div>
+          </div>
+          <div class="option-price consult">협의</div>
         </div>
       </div>
     </div>
@@ -2171,8 +2191,8 @@ section { padding: var(--section-padding) 0; position: relative; }
     <div class="cta-wrapper reveal">
       <div class="cta-tag">⏰ NOW ACCEPTING</div>
       <h2 class="cta-title">
-        지역별 시술 성지 만드는<br>
-        <em>협력병원 네트워크</em>에<br>
+        지역별 시술 성지 만드는 <br>
+        <em>협력병원 네트워크</em>에 <br>
         합류하세요
       </h2>
 
