@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>파트너 여정 지도 — K MEDICAL NETWORK</title>
+<meta name="description" content="한 병원이 지역 시술 성지가 되고 글로벌까지 가는 길을 7개 마일스톤으로 그린 K메디컬 네트워크 파트너 로드맵.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+
+<style>
+:root{
+  --yellow:#E9E83C;--yellow-d:#d6d52c;
+  --ink:#121211;--ink-2:#1c1c1a;--ink-3:#262624;--paper:#f4f3ee;--paper-2:#ecebe3;--white:#fff;
+  --muted:#6f6d63;--line:#e0ddcf;--line-d:rgba(255,255,255,.13);
+  --disp:'Archivo',sans-serif;
+  --body:'Pretendard Variable',Pretendard,-apple-system,sans-serif;
+  --maxw:1120px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--paper);color:var(--ink);line-height:1.65;font-size:16px;
+  -webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+h1,h2,h3{text-wrap:balance}
+p{text-wrap:pretty}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* ---------- /kmedimkt 공통 어휘 ---------- */
+.kick{font-family:var(--disp);font-weight:700;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink);display:inline-flex;align-items:center;gap:12px}
+.kick::before{content:"";width:28px;height:2px;background:var(--ink)}
+.stitle{font-weight:900;font-size:clamp(30px,4.6vw,54px);line-height:1.15;letter-spacing:-.03em;margin-top:18px}
+.hi{background:var(--yellow);padding:0 .12em;border-radius:4px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.frame{border:2px solid var(--ink);border-radius:16px;box-shadow:11px 11px 0 var(--yellow);background:var(--white)}
+.dark{background:var(--ink);color:#fff;border-radius:20px}
+.num{font-family:var(--disp);font-weight:900;letter-spacing:-.02em;line-height:1}
+.lead{margin-top:20px;font-size:clamp(16px,1.6vw,18px);color:var(--muted);font-weight:500;line-height:1.75;max-width:680px}
+.sec{padding:clamp(56px,7vw,96px) 0}
+.sec.alt{background:var(--paper-2)}
+
+/* ---------- 상단바 ---------- */
+.top{position:sticky;top:0;z-index:50;background:rgba(244,243,238,.9);backdrop-filter:blur(12px);border-bottom:1.5px solid var(--ink)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:70px}
+.logo{font-family:var(--disp);font-weight:900;font-size:19px;letter-spacing:.14em}
+.logo b{font-weight:500}
+.top-right{display:flex;align-items:center;gap:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:800;font-size:14px;border:2px solid var(--ink);white-space:nowrap;transition:.2s}
+.btn-y{background:var(--yellow)}
+.btn-y:hover{box-shadow:5px 5px 0 var(--ink);transform:translate(-1px,-1px)}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{box-shadow:5px 5px 0 var(--yellow);transform:translate(-1px,-1px)}
+.btn-ghost{font-family:var(--disp);font-weight:700;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:10px 12px;border:1.5px dashed var(--line);border-radius:10px}
+.btn-ghost.on{color:var(--ink);border-color:var(--ink);background:var(--yellow)}
+
+/* ---------- 루트 선택 ---------- */
+.route{margin-top:48px;padding:32px}
+.route-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.route-head h2{font-size:22px;font-weight:900;letter-spacing:-.02em}
+.route-head small{font-family:var(--disp);font-weight:700;font-size:11px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase}
+.route-groups{display:grid;grid-template-columns:1fr 1.6fr;gap:18px;margin-top:22px}
+.group{background:var(--paper-2);border-radius:14px;padding:18px}
+.group h4{font-family:var(--disp);font-weight:700;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:8px;margin-bottom:12px}
+.group h4 .dot{width:9px;height:9px;border-radius:50%;background:var(--yellow);border:1.5px solid var(--ink)}
+.group.dom h4 .dot{background:var(--white)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{padding:10px 14px;border-radius:999px;border:1.5px solid var(--ink);background:var(--white);font-size:14.5px;font-weight:600;transition:.15s;display:inline-flex;align-items:center;gap:8px}
+.chip .g{font-family:var(--disp);font-weight:800;font-size:9.5px;letter-spacing:.14em;background:var(--ink);color:var(--yellow);padding:2px 6px;border-radius:5px}
+.chip:hover{box-shadow:3px 3px 0 var(--ink)}
+.chip.on{background:var(--yellow);font-weight:800;box-shadow:3px 3px 0 var(--ink)}
+
+/* 여정 요약 (다크 스트립) */
+.summary{margin-top:22px;display:grid;grid-template-columns:repeat(4,1fr);border-radius:16px;overflow:hidden}
+.sum{padding:18px 20px;border-right:1px solid var(--line-d)}
+.sum:last-child{border-right:0}
+.sum .k{font-family:var(--disp);font-weight:700;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.sum .v{margin-top:8px;font-size:17px;font-weight:800;color:var(--yellow);letter-spacing:-.01em}
+.sum .v.muted{color:rgba(255,255,255,.45);font-weight:500}
+.slots{display:flex;gap:8px;margin-top:8px}
+.slot{flex:1;height:34px;border-radius:9px;border:1.5px solid var(--yellow);display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-weight:800;font-size:11px;letter-spacing:.1em;color:var(--yellow);cursor:pointer;transition:.2s}
+.slot.taken{background:rgba(255,255,255,.14);border-color:transparent;color:rgba(255,255,255,.45);text-decoration:line-through}
+
+/* ---------- 여정 지도 ---------- */
+.map-grid{display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:start;margin-top:28px}
+
+/* HUD */
+.hud{position:sticky;top:94px;padding:26px}
+.hud .lv{display:flex;align-items:flex-end;gap:12px}
+.hud .lv .n{font-size:66px;color:var(--yellow)}
+.hud .lv .t{padding-bottom:8px}
+.hud .lv .t small{display:block;font-family:var(--disp);font-weight:700;font-size:10.5px;letter-spacing:.2em;color:rgba(255,255,255,.5);text-transform:uppercase}
+.hud .lv .t b{font-size:22px;font-weight:800;letter-spacing:-.01em}
+.bar{margin-top:22px;height:10px;background:var(--ink-3);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--yellow);border-radius:99px;transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.bar-meta{display:flex;justify-content:space-between;margin-top:8px;font-family:var(--disp);font-weight:700;font-size:11px;letter-spacing:.1em;color:rgba(255,255,255,.5)}
+.bar-meta b{color:var(--yellow)}
+.hud .now{margin-top:20px;padding-top:18px;border-top:1px solid var(--line-d)}
+.hud .now .k{font-family:var(--disp);font-weight:700;font-size:10.5px;letter-spacing:.2em;color:rgba(255,255,255,.5);text-transform:uppercase}
+.hud .now .v{margin-top:6px;font-size:16px;font-weight:700}
+.badges{margin-top:18px;display:flex;flex-wrap:wrap;gap:6px}
+.badge{font-family:var(--disp);font-weight:700;font-size:10.5px;letter-spacing:.08em;padding:6px 10px;border-radius:8px;border:1px solid var(--line-d);color:rgba(255,255,255,.45);transition:.3s}
+.badge.got{border-color:var(--yellow);color:var(--ink);background:var(--yellow)}
+.hud .hint{margin-top:16px;font-size:12.5px;color:rgba(255,255,255,.5);line-height:1.6}
+
+/* 타임라인 */
+.tl{position:relative;padding:8px 0}
+.tl::before{content:"";position:absolute;left:34px;top:0;bottom:0;border-left:2px dashed var(--ink);opacity:.35}
+.stage{position:relative;padding-left:92px;margin-bottom:22px;cursor:pointer}
+.node{position:absolute;left:0;top:16px;width:68px;height:68px;border-radius:50%;background:var(--white);border:2px solid var(--ink);display:flex;align-items:center;justify-content:center;transition:.25s}
+.node .num{font-size:26px;color:var(--ink)}
+.stage.done .node{background:var(--yellow)}
+.stage.cur .node{background:var(--ink);box-shadow:0 0 0 6px var(--yellow)}
+.stage.cur .node .num{color:var(--yellow)}
+.stage.lock .node{border-style:dashed;opacity:.55}
+.card{background:var(--white);border:1.5px solid var(--line);border-radius:18px;padding:28px 30px;transition:.25s}
+.stage:hover .card{border-color:var(--ink)}
+.stage.cur .card{border:2px solid var(--ink);box-shadow:11px 11px 0 var(--yellow)}
+.stage.lock .card{opacity:.55;border-style:dashed}
+.c-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.c-top .st{font-family:var(--disp);font-weight:700;font-size:11px;letter-spacing:.22em;text-transform:uppercase}
+.c-top .dur{font-family:var(--disp);font-weight:700;font-size:11px;letter-spacing:.1em;color:var(--muted)}
+.card h3{margin-top:10px;font-size:clamp(21px,2.2vw,26px);font-weight:900;letter-spacing:-.02em}
+.card h3 span{color:var(--muted);font-weight:500}
+.card .pitch{margin-top:8px;font-size:16.5px;font-weight:700}
+.card .pitch mark{background:var(--yellow);padding:0 .1em;border-radius:3px}
+.card .todo{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.todo div{background:var(--paper-2);border-radius:10px;padding:12px 13px;font-size:14.5px;color:var(--ink);line-height:1.5;font-weight:500}
+.todo div b{display:block;font-family:var(--disp);font-weight:800;font-size:10px;letter-spacing:.16em;color:var(--muted);margin-bottom:4px;text-transform:uppercase}
+.c-foot{margin-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;padding-top:16px;border-top:1.5px solid var(--line)}
+.clear{font-size:14.5px;color:var(--muted);font-weight:500}
+.clear b{color:var(--ink);font-weight:800}
+.get{font-family:var(--disp);font-weight:800;font-size:11px;letter-spacing:.14em;background:var(--yellow);border:1.5px solid var(--ink);padding:7px 11px;border-radius:8px;white-space:nowrap}
+.lockline{margin-top:12px;font-size:13.5px;color:var(--muted);display:none;font-weight:500}
+.stage.lock .lockline{display:block}
+.lockline b{color:var(--ink)}
+
+/* 발표자 노트 */
+.note{display:none;margin-top:16px;padding:14px 16px;border-radius:12px;background:#fbfad9;border-left:4px solid var(--ink);font-size:14.5px;line-height:1.6}
+.note b{display:block;font-family:var(--disp);font-weight:800;font-size:10px;letter-spacing:.2em;color:var(--muted);margin-bottom:6px;text-transform:uppercase}
+body.presenter .note{display:block}
+body.presenter .top{border-bottom-color:var(--yellow-d);background:rgba(233,232,60,.15)}
+
+/* ---------- 글로벌 ---------- */
+.global-box{padding:40px;position:relative;overflow:hidden}
+.global-box::after{content:"";position:absolute;right:-130px;top:-130px;width:380px;height:380px;border-radius:50%;border:2px dashed var(--yellow);opacity:.45}
+.global-box .kick{color:var(--yellow)}
+.global-box .kick::before{background:var(--yellow)}
+.global-box h2{margin-top:18px;font-size:clamp(26px,3.2vw,38px);font-weight:900;letter-spacing:-.03em;line-height:1.2}
+.global-box h2 .hi{color:var(--ink)}
+.global-box p{margin-top:14px;color:rgba(255,255,255,.7);max-width:640px;font-size:16px;font-weight:500}
+.gtypes{margin-top:26px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;position:relative;z-index:1}
+.gt{background:var(--ink-2);border:1px solid var(--line-d);border-radius:14px;padding:20px}
+.gt .num{font-size:28px;color:var(--yellow)}
+.gt h4{margin-top:10px;font-size:17px;font-weight:800}
+.gt p{margin-top:6px;font-size:14px;color:rgba(255,255,255,.6)}
+.gstate{margin-top:20px;font-family:var(--disp);font-weight:700;font-size:12px;letter-spacing:.12em;color:rgba(255,255,255,.5)}
+.gstate.on{color:var(--yellow)}
+
+/* ---------- CTA ---------- */
+.cta{text-align:center}
+.cta .num{font-size:120px}
+.cta h2{margin-top:4px;font-size:clamp(26px,3.6vw,44px);font-weight:900;letter-spacing:-.03em}
+.cta p{margin:14px auto 0;color:var(--muted);max-width:560px;font-size:16.5px;font-weight:500}
+.cta .btn{margin-top:28px;font-size:16px;padding:16px 30px}
+footer{border-top:1.5px solid var(--ink);padding:24px 0;text-align:center}
+
+/* ---------- 등장 ---------- */
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* ---------- 반응형 ---------- */
+@media (max-width:1000px){
+  .map-grid{grid-template-columns:1fr}
+  .hud{position:static}
+  .route-groups{grid-template-columns:1fr}
+  .summary{grid-template-columns:repeat(2,1fr)}
+  .sum:nth-child(2){border-right:0}
+  .sum:nth-child(1),.sum:nth-child(2){border-bottom:1px solid var(--line-d)}
+  .gtypes{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .route{padding:22px;box-shadow:7px 7px 0 var(--yellow)}
+  .tl::before{left:24px}
+  .stage{padding-left:66px;margin-bottom:16px}
+  .node{width:48px;height:48px;top:12px}
+  .node .num{font-size:19px}
+  .card{padding:20px}
+  .stage.cur .card{box-shadow:7px 7px 0 var(--yellow)}
+  .card .todo{grid-template-columns:1fr}
+  .summary{grid-template-columns:1fr}
+  .sum{border-right:0;border-bottom:1px solid var(--line-d)}
+  .sum:last-child{border-bottom:0}
+  .top .wrap{height:62px}
+  .btn-ghost span{display:none}
+  .cta .num{font-size:84px}
+  .global-box{padding:26px}
+}
+</style>
+</head>
+<body>
+
+<!-- 상단바 -->
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#">K <b>MEDICAL</b></a>
+    <div class="top-right">
+      <button class="btn-ghost" id="presenterBtn" title="발표자 노트 (P)">🗒 <span>Presenter</span></button>
+      <a class="btn btn-y" href="https://docs.google.com/forms/d/e/1FAIpQLScaasAK0332MIjqxP6DEj0OrKtQZdElWgvNC9NbkHLo3O26tQ/viewform" target="_blank" rel="noopener">신청하기 →</a>
+    </div>
+  </div>
+</header>
+
+<!-- 히어로 + 루트 선택 -->
+<section class="sec">
+  <div class="wrap">
+    <span class="kick reveal">Partner Journey Map</span>
+    <h1 class="stitle reveal">원장님, 여기 앉아보세요.<br>저희와 떠날 여정은 <span class="hi">이렇습니다.</span></h1>
+    <p class="lead reveal">한 병원이 지역 시술 성지가 되고, 글로벌까지 가는 길을 7개 마일스톤으로 그렸습니다.
+      아래에서 진료과를 고르면 원장님의 루트와 베이스 커뮤니티가 지도에 표시됩니다.</p>
+
+    <div class="route frame reveal">
+      <div class="route-head">
+        <h2>STEP 0 · 진료과를 선택하세요</h2>
+        <small>Choose your route</small>
+      </div>
+      <div class="route-groups">
+        <div class="group">
+          <h4><span class="dot"></span>한 · 영 · 일 마케팅 가능 (글로벌 해금)</h4>
+          <div class="chips" id="chipsG"></div>
+        </div>
+        <div class="group dom">
+          <h4><span class="dot"></span>국내 커뮤니티 입점 마케팅</h4>
+          <div class="chips" id="chipsD"></div>
+        </div>
+      </div>
+
+      <div class="summary dark" id="summary">
+        <div class="sum"><div class="k">선택 루트</div><div class="v muted" id="sRoute">진료과를 선택하세요</div></div>
+        <div class="sum"><div class="k">베이스 커뮤니티</div><div class="v muted" id="sBase">—</div></div>
+        <div class="sum"><div class="k">글로벌 루트</div><div class="v muted" id="sGlobal">🔒 잠김</div></div>
+        <div class="sum"><div class="k">지역 · 주력시술 TO</div>
+          <div class="slots"><div class="slot" data-slot="1">SLOT 1</div><div class="slot" data-slot="2">SLOT 2</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 여정 지도 -->
+<section class="sec alt" style="padding-top:0">
+  <div class="wrap">
+    <span class="kick reveal" style="margin-top:56px">The Journey · 7 Milestones</span>
+    <div class="map-grid">
+      <div class="tl" id="tl"></div>
+      <aside class="hud dark reveal">
+        <div class="lv">
+          <div class="n num" id="lvN">1</div>
+          <div class="t"><small>Partner Level</small><b id="lvT">탐험가</b></div>
+        </div>
+        <div class="bar"><i id="barFill"></i></div>
+        <div class="bar-meta"><span>PROGRESS</span><b id="barPct">0%</b></div>
+        <div class="now"><div class="k">현재 위치</div><div class="v" id="nowT">STAGE 00 · 베이스캠프</div></div>
+        <div class="badges" id="badges"></div>
+        <p class="hint">스테이지 카드를 누르면 '현재 위치'가 이동합니다. 상담 중 원장님 병원의 지금 단계를 찍어드리세요.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- 글로벌 -->
+<section class="sec">
+  <div class="wrap">
+    <div class="global-box dark reveal">
+      <span class="kick">Stage 06 · Global (KR · EN · JP)</span>
+      <h2>국내 검증된 병원을 모아<br><span class="hi">바다 건너</span>로 갑니다.</h2>
+      <p>한국어 · 영어 · 일본어 세 언어로 콘텐츠를 뽑고, 뷰피크 글로벌 노출과 의료관광 연계까지 이어지는 루트입니다.
+         아래 세 유형에 해당하면 글로벌 스테이지가 열립니다.</p>
+      <div class="gtypes">
+        <div class="gt"><div class="num">01</div><h4>지방흡입</h4><p>결과가 사진으로 말하고, 해외 수요가 꾸준한 카테고리</p></div>
+        <div class="gt"><div class="num">02</div><h4>공장형 피부클리닉</h4><p>회전율 · 가격 경쟁력으로 단기 방문 의료관광에 적합</p></div>
+        <div class="gt"><div class="num">03</div><h4>의사상담 필수 피부과</h4><p>전문성 콘텐츠가 통역 · 언어 콘텐츠로 그대로 확장</p></div>
+      </div>
+      <div class="gstate" id="gState">🔒 현재 선택 루트는 국내 집중 — 글로벌은 성지 확보 후 다음 여정에서</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="sec alt cta">
+  <div class="wrap">
+    <div class="num reveal">2</div>
+    <h2 class="reveal">지역별, 주력시술별 <span class="hi">TO는 단 2곳</span></h2>
+    <p class="reveal">여정의 목적지는 '우리 병원의 특화 시술 성지'. 같은 지역, 같은 시술에서 자리는 두 곳뿐입니다.</p>
+    <a class="btn btn-ink reveal" href="https://docs.google.com/forms/d/e/1FAIpQLScaasAK0332MIjqxP6DEj0OrKtQZdElWgvNC9NbkHLo3O26tQ/viewform" target="_blank" rel="noopener">파트너 병원 신청하기 →</a>
+  </div>
+</section>
+
+<footer><span class="kick" style="display:inline-flex">K Medical Network · Partner Journey Map</span></footer>
+
+<script>
+/* ================= 데이터 ================= */
+const ROUTES = [
+  {id:'lipo',   name:'지방흡입',              base:'뷰피크 웹 · 커뮤니티 · SNS', g:true},
+  {id:'skinF',  name:'피부클리닉 (공장형)',    base:'뷰피크 웹 · 커뮤니티 · SNS', g:true},
+  {id:'skinD',  name:'피부과 (의사상담 필수)', base:'뷰피크 웹 · 커뮤니티 · SNS', g:true},
+  {id:'eye',    name:'눈밑지방',              base:'뷰피크 웹 · 커뮤니티 · SNS', g:false, note:'시술부터 수술까지 가능한 병원 우대'},
+  {id:'hair',   name:'탈모 · 모발이식',        base:'탈다트 커뮤니티',            g:false},
+  {id:'obes',   name:'비만클리닉',            base:'탈다트 커뮤니티',            g:false},
+  {id:'vag',    name:'질성형',                base:'여성성형 · 시술 커뮤니티',   g:false},
+  {id:'breast', name:'가슴성형',              base:'여성성형 · 시술 커뮤니티',   g:false},
+  {id:'dis',    name:'질환 진료과',            base:'환우 커뮤니티',              g:false},
+  {id:'dent',   name:'치과',                  base:'치과 커뮤니티',              g:false},
+];
+
+const STAGES = [
+  {n:'00', name:'베이스캠프', sub:'진단과 포지셔닝', dur:'1주',
+   pitch:'어디로 갈지보다, <mark>지금 어디에 서 있는지</mark>부터 봅니다.',
+   todo:[['진단','지역 · 주력시술 TO 확인'],['선정','특화 시술 성지 후보 1개'],['비교','같은 지역 경쟁 포지션 점검']],
+   clear:'루트 확정 + 특화 시술 1개 선정', badge:'COMPASS',
+   note:'원장님 병원의 주력 시술이 뭔지부터 여쭤보세요. 그 시술로 우리 지역에서 "성지" 소리 듣는 곳이 있는지 같이 검색해보는 게 첫 장면입니다.'},
+  {n:'01', name:'콘텐츠 자산', sub:'의사가 말하는 영상', dur:'2~4주',
+   pitch:'의사가 말하면 광고가 아니라 <mark>판단 기준</mark>이 됩니다.',
+   todo:[['촬영','미드폼 1편 (시술의 신 포맷)'],['개설','의학채널 SNS 계정'],['재가공','숏츠 · 릴스 · 틱톡 클립 세트']],
+   clear:'미드폼 1편 + 숏폼 세트 발행', badge:'FIRST VIDEO',
+   note:'환자는 광고를 안 믿지만 의사 말은 믿습니다. 촬영 한 번으로 미드폼 1편 + 숏폼 여러 개가 나오는 구조라 원장님 시간은 하루면 된다고 안심시키세요.'},
+  {n:'02', name:'커뮤니티 입점', sub:'거점 확보', dur:'1개월~',
+   pitch:'고객은 광고보다 <mark>다른 사람의 질문과 후기</mark>를 먼저 봅니다.',
+   todo:[['입점','베이스 커뮤니티 인증 병원 등록'],['운영','정보글 · 질문글 · 이벤트'],['축적','실사용 후기 누적']],
+   clear:'입점 완료 + 첫 후기 게시', badge:'OUTPOST',
+   note:'여기서 위 요약의 "베이스 커뮤니티"를 가리키세요. 원장님 진료과에 맞는 거점이 이미 운영 중이라는 게 핵심 — 새로 만드는 게 아니라 입점하는 겁니다.'},
+  {n:'03', name:'검색 영토', sub:'플랫폼 누적', dur:'2~3개월 누적',
+   pitch:'SNS는 휘발되지만, <mark>웹 콘텐츠는 누적</mark>됩니다.',
+   todo:[['누적','뷰피크 웹 콘텐츠 시리즈'],['검색','네이버 SEO + 구글 SEO'],['AI','AEO · GEO — AI 답변에 병원명']],
+   clear:'시리즈 콘텐츠 누적 + 검색 · AI 노출 확인', badge:'TERRITORY',
+   note:'네이버 상위노출은 사라지지만 뷰피크 웹은 쌓입니다. "ChatGPT한테 물어보면 우리 병원이 나오게 세팅한다" 이 한 문장이 제일 잘 먹힙니다.'},
+  {n:'04', name:'7채널 확산', sub:'연합군 결성', dur:'지속',
+   pitch:'영상 하나가 아니라, <mark>상담 전 설득 묶음</mark>입니다.',
+   todo:[['배포','1개 콘텐츠 → 7채널 동시 노출'],['반응','오픈채팅 실시간 수요 확인'],['동선','문의 → 상담 전환 정비']],
+   clear:'7채널 동시 노출 + 오픈채팅 문의 발생', badge:'7 CHANNELS',
+   note:'미디어 네트워크 페이지의 "1개 콘텐츠 7채널" 화면을 띄우세요. 말로 설명하지 말고 그림으로 보여주는 단계입니다.'},
+  {n:'05', name:'지역 시술 성지', sub:'왕관 획득', dur:'3~6개월 목표',
+   pitch:'지역별 · 주력시술별 <mark>TO는 단 2곳</mark>입니다.',
+   todo:[['확정','지역 · 시술 TO 슬롯 확정'],['고정','성지 포지션 콘텐츠 유지'],['리포트','노출 · 반응 데이터 공유']],
+   clear:'TO 확정 + 지역 시술 성지 인증', badge:'SANCTUM',
+   note:'요약의 TO 슬롯을 눌러 하나를 "확정"으로 바꿔 보여주세요. "지금 결정하시면 남은 슬롯 하나가 원장님 것"으로 마무리합니다.'},
+  {n:'06', name:'글로벌', sub:'바다 건너 · 한 · 영 · 일', dur:'6개월+',
+   pitch:'국내 검증된 병원을 모아 <mark>글로벌</mark>로 갑니다.',
+   todo:[['언어','영어 · 일본어 콘텐츠 제작'],['노출','뷰피크 글로벌 · 영어권 SNS'],['연계','의료관광 상담 동선']],
+   clear:'첫 해외 문의 발생', badge:'VOYAGE', lock:true,
+   note:'지방흡입 · 공장형 피부클리닉 · 의사상담 필수 피부과면 여기까지 열립니다. 일본 · 영어권 환자가 어떤 콘텐츠를 보고 오는지 사례로 이야기하세요.'},
+];
+const LEVELS = [[0,'탐험가'],[2,'개척자'],[4,'영주'],[6,'항해자']];
+
+/* ================= 상태 ================= */
+let route = null, cur = 0, globalOpen = false;
+const $ = s => document.querySelector(s);
+
+/* ================= 렌더 ================= */
+function chip(r){
+  const b=document.createElement('button');
+  b.className='chip'; b.dataset.id=r.id;
+  b.innerHTML = r.name + (r.g?'<span class="g">GLOBAL</span>':'');
+  b.onclick=()=>selectRoute(r.id);
+  return b;
+}
+ROUTES.forEach(r=> (r.g?$('#chipsG'):$('#chipsD')).appendChild(chip(r)));
+
+const tl=$('#tl');
+STAGES.forEach((s,i)=>{
+  const el=document.createElement('article');
+  el.className='stage reveal'; el.dataset.i=i;
+  el.innerHTML=`
+    <div class="node"><span class="num">${s.n}</span></div>
+    <div class="card">
+      <div class="c-top"><span class="st">Stage ${s.n} · ${s.badge}</span><span class="dur">${s.dur}</span></div>
+      <h3>${s.name} <span>· ${s.sub}</span></h3>
+      <p class="pitch">${s.pitch}</p>
+      <div class="todo">${s.todo.map(t=>`<div><b>${t[0]}</b>${t[1]}</div>`).join('')}</div>
+      <div class="lockline">🔒 해금 조건 — <b>한 · 영 · 일 마케팅 가능 유형</b> 선택 시 열립니다.</div>
+      <div class="c-foot"><span class="clear">클리어 조건 · <b>${s.clear}</b></span><span class="get">획득 · ${s.badge}</span></div>
+      <div class="note"><b>Presenter Note</b>${s.note}</div>
+    </div>`;
+  el.onclick=()=>setStage(i);
+  tl.appendChild(el);
+});
+$('#badges').innerHTML = STAGES.map(s=>`<span class="badge" data-b="${s.n}">${s.badge}</span>`).join('');
+
+/* ================= 동작 ================= */
+function selectRoute(id){
+  route = ROUTES.find(r=>r.id===id);
+  document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('on',c.dataset.id===id));
+  $('#sRoute').textContent = route.name; $('#sRoute').classList.remove('muted');
+  $('#sBase').textContent = route.base + (route.note?` · ${route.note}`:''); $('#sBase').classList.remove('muted');
+  globalOpen = route.g;
+  $('#sGlobal').textContent = globalOpen?'🔓 해금 · 한 · 영 · 일':'🔒 잠김 · 국내 집중';
+  $('#sGlobal').classList.toggle('muted',!globalOpen);
+  const gs=$('#gState');
+  gs.textContent = globalOpen
+    ? `🔓 ${route.name} — 글로벌 스테이지 열림 · 성지 확보 후 바로 이어집니다`
+    : `🔒 ${route.name} — 국내 집중 루트 · 글로벌은 성지 확보 후 다음 여정에서`;
+  gs.classList.toggle('on',globalOpen);
+  const s2 = tl.children[2].querySelector('.todo div');
+  s2.innerHTML = `<b>입점</b>${route.base} 인증 병원 등록`;
+  paint();
+}
+function setStage(i){ if(i===6 && !globalOpen) return; cur=i; paint(); }
+function paint(){
+  [...tl.children].forEach((el,i)=>{
+    el.classList.toggle('done', i<cur);
+    el.classList.toggle('cur', i===cur);
+    el.classList.toggle('lock', i===6 && !globalOpen);
+  });
+  const max = globalOpen?6:5, pct = Math.round(cur/max*100);
+  $('#barFill').style.width = pct+'%'; $('#barPct').textContent = pct+'%';
+  $('#nowT').textContent = `STAGE ${STAGES[cur].n} · ${STAGES[cur].name}`;
+  const lv = LEVELS.filter(l=>cur>=l[0]).length;
+  $('#lvN').textContent = lv; $('#lvT').textContent = LEVELS[lv-1][1];
+  document.querySelectorAll('.badge').forEach((b,i)=>b.classList.toggle('got', i<cur));
+}
+document.querySelectorAll('.slot').forEach(s=>s.onclick=()=>{s.classList.toggle('taken'); s.textContent = s.classList.contains('taken')?'확정됨':'SLOT '+s.dataset.slot;});
+const pb=$('#presenterBtn');
+function togglePresenter(){document.body.classList.toggle('presenter');pb.classList.toggle('on');}
+pb.onclick=togglePresenter;
+document.addEventListener('keydown',e=>{ if((e.key==='p'||e.key==='P') && !e.metaKey && !e.ctrlKey) togglePresenter(); });
+const io=new IntersectionObserver(en=>en.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach((e,i)=>{e.style.transitionDelay=(i%5*60)+'ms';io.observe(e);});
+paint();
+</script>
+</body>
+</html>
